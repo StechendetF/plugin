@@ -1,0 +1,20 @@
+# AutoReplantCrops - Konfigurationsdatei
+
+# Link: https://minecraft-heads.com/custom-heads
+# (Mit diesen link kannst du das Kopf design ändern)
+#
+# kurtze erklärung:
+# gehe auf die webseite: https://minecraft-heads.com/custom-heads
+# suche dir einen Kopf aus und klcke drauf
+# dan scrollst du runter bis du For Developers findest
+# dort kopierst du den Value und fügst ihn bei headTexture rein ~
+
+# Zeit in Sekunden bis der Crop wieder gepflanzt wird
+replant-delay: 1.5
+
+# Crop-Typen, die unterstützt werden
+crops:
+  - WHEAT
+  - CARROTS
+  - POTATOES
+  - BEETROOTS

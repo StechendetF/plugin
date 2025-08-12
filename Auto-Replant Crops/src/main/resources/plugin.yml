@@ -1,0 +1,36 @@
+name: Auto-ReplantCrops
+version: '0.0.1'
+main: de.felix.autoReplantCrops.AutoReplantCrops
+api-version: '1.21'
+prefix: MD
+load: STARTUP
+authors: [ StechendetF ]
+description: A new Minecraft Gamemode
+commands:
+  createfield:
+    description: Erstellt ein neues Feld
+    usage: /createfield <radius>
+    permission: autoreplant.createfield
+
+  reloadfields:
+    description: Lädt alle Felder neu aus der Config
+    usage: /reloadfields
+    permission: autoreplant.reloadfields
+
+  deletefield:
+    description: Löscht ein Feld und entfernt den Kopf
+    usage: /deletefield <fieldId>
+    permission: autoreplant.deletefield
+
+permissions:
+  autoreplant.createfield:
+    description: Erlaubt das Erstellen eines Auto-Replant Feldes
+    default: false
+
+  autoreplant.reloadfields:
+    description: Erlaubt das Neuladen der Felder aus der Config
+    default: op
+
+  autoreplant.deletefield:
+    description: Erlaubt das Löschen eines Feldes
+    default: op
